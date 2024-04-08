@@ -5,17 +5,19 @@ import { CommonModule } from '@angular/common';
 
 import { MatTableModule } from '@angular/material/table';
 
+import { RouterModule } from '@angular/router';
+
 
 @Component({
   selector: 'app-product-read',
   standalone: true,
-  imports: [CommonModule, MatTableModule],
+  imports: [CommonModule, MatTableModule, RouterModule],
   templateUrl: './product-read.component.html',
   styleUrl: './product-read.component.css',
 })
 export class ProductReadComponent implements OnInit {
   products: Product[] = [];
-  displayedColumns = ['id', 'name', 'price'];
+  displayedColumns = ['id', 'name', 'price', 'action'];
 
   constructor(private productService: ProductService) {}
 
