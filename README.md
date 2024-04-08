@@ -1,27 +1,31 @@
-# Frontend
+#CRUD_ANGULAR
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
+## 💻 Projeto
 
-## Development server
+CRUD desenvolvido no curso de Angular 9 - Essencial da COD3R. O curso pode ser encontrado através <a href="https://www.cod3r.com.br/courses/angular-9-essencial">deste link</a>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## ✨ Tecnologias
 
-## Code scaffolding
+- [Angular](https://angular.io/)
+- [Angular Material](https://material.angular.io/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## 🚀 Como executar
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Clone o projeto e acesse a pasta do mesmo.
 
-## Running unit tests
+```bash
+$ git clone https://github.com/ViniciusBussolo1/CRUD_Angular.git
+$ cd CRUD_Angular
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Para iniciá-lo, siga os passos abaixo:
 
-## Running end-to-end tests
+```bash
+# Instalar as dependências
+$ npm install
+# Iniciar o projeto
+$ npm start
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+O app estará disponível no seu browser pelo endereço  http://localhost:4200/.
