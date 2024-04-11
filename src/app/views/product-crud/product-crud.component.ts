@@ -4,6 +4,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { Router } from '@angular/router';
 import { ProductReadComponent } from '../../components/product/product-read/product-read.component';
 import { ProductRead2Component } from '../../components/product/product-read2/product-read2.component';
+import { HeaderService } from '../../components/template/header/header.service';
 
 @Component({
   selector: 'app-product-crud',
@@ -13,7 +14,13 @@ import { ProductRead2Component } from '../../components/product/product-read2/pr
   styleUrl: './product-crud.component.css',
 })
 export class ProductCrudComponent {
-  constructor(private router: Router) {}
+  constructor(private router: Router, private headerService: HeaderService) {
+    headerService.headerData = {
+      title: 'Cadastro do produtos',
+      icon: 'storefront',
+      routeUrl: '/products',
+    };
+  }
 
   navigateToProductCreate(): void {
     this.router.navigate(['/products/create']);
