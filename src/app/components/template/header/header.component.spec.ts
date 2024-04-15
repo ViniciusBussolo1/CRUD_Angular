@@ -3,14 +3,12 @@ import { HeaderComponent } from './header.component';
 import { Router, RouterModule } from '@angular/router';
 import { By } from '@angular/platform-browser';
 import { HeaderService } from './header.service';
-import { HomeComponent } from '../../../views/home/home.component';
-import { ProductCrudComponent } from '../../../views/product-crud/product-crud.component';
 
 describe('HeaderComponent', () => {
   let component: HeaderComponent;
   let fixture: ComponentFixture<HeaderComponent>;
   let headerService: HeaderService;
-  let router: Router
+  let router: Router;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
@@ -46,5 +44,4 @@ describe('HeaderComponent', () => {
     expect(iconElement).toBeTruthy();
     expect(iconElement.nativeElement.textContent).toContain('home');
   });
-
 });
